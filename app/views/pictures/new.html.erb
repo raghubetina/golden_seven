@@ -1,1 +1,11 @@
 <h1>Add A New Picture</h1>
+
+<%= form_tag "http://localhost:3000/pictures", method: "post" do %>
+  <%= label_tag :source %>
+  <%= text_field_tag :source %>
+
+  <%= label_tag :caption %>
+  <%= text_field_tag :caption %>
+
+  <%= submit_tag "Create Picture" %>
+<% end %>

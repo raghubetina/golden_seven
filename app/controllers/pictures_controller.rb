@@ -24,4 +24,7 @@ class PicturesController < ApplicationController
   def edit
     @picture = Picture.find(params[:id])
   end
+
+  def update
+  end
 end

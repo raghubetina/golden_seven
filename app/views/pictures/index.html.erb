@@ -5,6 +5,11 @@
     <li>
       <%= image_tag picture.source, width: 240 %>
       <p><%= picture.caption %></p>
+      <nav>
+        <%= link_to "Show", "http://localhost:3000/pictures/#{picture.id}" %>
+        <%= link_to "Edit", "http://localhost:3000/pictures/#{picture.id}/edit" %>
+        <%= link_to "Delete", "http://localhost:3000/pictures/#{picture.id}", method: "delete" %>
+      </nav>
     </li>
   <% end %>
 </ul>

@@ -35,4 +35,7 @@ class PicturesController < ApplicationController
 
     redirect_to "http://localhost:3000/pictures/#{@picture.id}"
   end
+
+  def destroy
+  end
 end

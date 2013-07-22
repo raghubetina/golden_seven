@@ -2,10 +2,10 @@
 
 <%= form_tag "http://localhost:3000/pictures/#{@picture.id}", method: "patch" do %>
   <%= label_tag :source, "Source URL:" %>
-  <%= text_field_tag :source %>
+  <%= text_field_tag :source, @picture.source %>
 
   <%= label_tag :caption, "Caption:" %>
-  <%= text_field_tag :caption %>
+  <%= text_field_tag :caption, @picture.caption %>
 
   <%= submit_tag "Update Picture" %>
 <% end %>

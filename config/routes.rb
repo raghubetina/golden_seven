@@ -4,4 +4,6 @@ GoldenSeven::Application.routes.draw do
 
   get "/pictures" => "pictures#index"
   get "/pictures/:id" => "pictures#show"
+
+  get "/pictures/:id/edit" => "pictures#edit"
 end
